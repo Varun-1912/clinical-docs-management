@@ -38,26 +38,6 @@ This system helps research teams and regulatory staff:
 ✅ Maintain an **audit log** for every action (upload, review, approval)  
 ✅ RESTful APIs for integration with frontend apps  
 
----
-
-## 📂 Project Structure
-
-clinicaldocs/
-├── src/
-│ ├── main/
-│ │ ├── java/com/example/clinicaldocs/
-│ │ │ ├── controller/ # REST endpoints
-│ │ │ ├── model/ # Entities (User, Document, AuditLog)
-│ │ │ ├── repository/ # JPA Repositories
-│ │ │ ├── service/ # Business logic
-│ │ │ └── ClinicalDocsApplication.java
-│ │ └── resources/
-│ │ ├── application.properties # DB + upload path config
-│ │ └── static/uploads/ # File uploads stored here
-│ └── test/ # Unit tests
-├── pom.xml
-└── README.md
-
 
 ---
 

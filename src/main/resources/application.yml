@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/clinical_docs;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+file:
+  upload-dir: ./uploads
+
+server:
+  port: 8080
